@@ -92,12 +92,9 @@ class FullscreenActivity : AppCompatActivity() {
 
         fullscreenContentControls = binding.fullscreenContentControls
 
-        thread {
-            Thread.sleep(60000)
-            this@FullscreenActivity.runOnUiThread {
-                ShowCurrentDate()
-                ShowWeeks()
-            }
+        binding.btnReload.setOnClickListener {
+            ShowCurrentDate()
+            ShowWeeks()
         }
     }
 

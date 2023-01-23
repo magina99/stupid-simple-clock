@@ -104,4 +104,16 @@
         </LinearLayout>
     </FrameLayout>
 
+    <ImageButton
+        android:id="@+id/btnReload"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@android:drawable/ic_lock_idle_alarm"
+        app:tint="#707070" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
